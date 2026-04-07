@@ -1,0 +1,83 @@
+/* Estilos para telas maiores (por exemplo, desktop) */
+.AD {
+  background-image: linear-gradient(rgba(240, 242, 245, 0.5), rgba(240, 242, 245, 0.5)), url('../Imagens/AD.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 60vh;
+  padding: 4rem;
+}
+
+.Propaganda {
+  margin: 0;
+  padding: 3rem;
+  background: rgba(14, 42, 57, 0.75); /* Azul escuro semi-transparente para contraste */
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  color: white;
+  text-align: center;
+  max-width: 450px;
+}
+
+.Propaganda h2 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+
+.Propaganda p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.AD-butao button {
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  padding: 1rem 3rem;
+  background: linear-gradient(135deg, #054E78 0%, #0a74b3 100%);
+  color: #ffffff;
+  border-radius: 5rem;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.AD-butao button:hover {
+  transform: scale(1.05) translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.2);
+}
+
+/* Estilos para telas menores (por exemplo, dispositivos móveis) */
+@media (max-width: 768px) {
+  .AD {
+      flex-direction: column; /* Empilha o conteúdo em telas menores */
+      align-items: center; /* Centraliza verticalmente o conteúdo */
+      height: auto; /* Altura automática com base no conteúdo */
+      text-align: center; /* Alinha o texto ao centro */
+  }
+
+  .Propaganda {
+      margin: 2rem;
+      font-size: 2rem; /* Reduza o tamanho da fonte para telas menores */
+  }
+
+  .Propaganda h2 {
+      padding-top: 2rem;
+  }
+
+  .AD-butao button {
+      font-size: 2rem; /* Reduza o tamanho da fonte para telas menores */
+  }
+}

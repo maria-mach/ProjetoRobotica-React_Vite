@@ -1,0 +1,40 @@
+/* Estilos base */
+.Carro-final {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: auto; /* Altura automática para se adaptar ao conteúdo */
+}
+
+.Carro-final img {
+    max-width: 100%; /* Certifica-se de que a imagem não exceda a largura do contêiner */
+    max-height: 100%; /* Certifica-se de que a imagem não exceda a altura do contêiner */
+}
+
+.Lista-vertical {
+    font-size: 0.95rem;
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.Lista-vertical a {
+    text-decoration: none;
+    color: var(--azul-principal);
+    transition: color 0.2s;
+}
+
+.Lista-vertical a:hover {
+    color: var(--verde);
+}
+
+.Carro-final {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.Carro-final img {
+    max-width: 300px;
+}

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333;
+    font-size: 0.95rem; /* Fonte base definida aqui */
+    animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+:root {
+    --azul-principal: #054E78;
+    --azul-secundario: #0E2A39;
+    --azul-transp: rgba(14, 42, 57, 0.1);
+    --cor-lupa: rgba(182, 223, 246, 0.1);
+    --verde: #146D0C;
+    --amarelo: #FFC700;
+    --vermelho: #FF0000;
+    --sombra-card: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+    --bg-card: #ffffff;
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.3);
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem 5rem 1rem;
+}
+
+.card {
+    position: relative;
+    z-index: 10;
+    background-color: #ffffff;
+    border-radius: 1.2rem; /* Bordas mais arredondadas para look moderno */
+    box-shadow: var(--sombra-card);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid var(--glass-border);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem 0.75rem;
+    }
+    
+    * {
+        font-size: 0.9rem; /* Fonte ainda menor no mobile */
+    }
+}

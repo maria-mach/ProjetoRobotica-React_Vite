@@ -1,0 +1,59 @@
+.Recursos {
+  background-color: #ffffff;
+}
+
+.Texto-lancamento {
+  text-align: start;
+  margin-bottom: 1rem;
+}
+
+.Blocos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.bloquinho {
+  background-color: var(--bg-card);
+  border-radius: 1rem;
+  box-shadow: var(--sombra-card);
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 320px;
+  transition: transform 0.2s;
+}
+
+.bloquinho:hover {
+  transform: translateY(-5px);
+}
+
+.Blocos img {
+  max-width: 80%;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.Blocos-text {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--azul-secundario);
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .Blocos {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* Mais colunas em telas menores se couber */
+    gap: 1rem;
+  }
+
+  .bloquinho {
+    padding: 1rem;
+    min-height: 250px;
+  }
+}

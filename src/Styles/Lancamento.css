@@ -1,0 +1,96 @@
+.Texto-lancamento h2 {
+    margin: 2rem 0;
+    color: var(--azul-principal);
+    font-size: 1.8rem; /* Reduzido de 3rem */
+    text-align: center;
+}
+
+.imagem-destaque {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.imagem-destaque img {
+    max-width: 100%;
+    width: 600px; /* Limita a largura para evitar pixelização da imagem de baixa resolução */
+    height: auto;
+    border-radius: 1.5rem;
+    box-shadow: var(--sombra-card);
+}
+
+.Subtitulo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--azul-secundario);
+    margin: 3rem 0 1.5rem 0;
+    text-align: center;
+}
+
+.texto p {
+    padding-bottom: 1.5rem;
+    font-size: 1rem; /* Reduzido de 1.6rem */
+    line-height: 1.6;
+}
+
+.destaque-azul {
+    background-color: var(--azul-transp);
+    padding: 1.5rem;
+    border-left: 4px solid var(--azul-principal);
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+.destaque-azul p {
+    color: var(--azul-principal);
+    font-weight: 600;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.semaforo-container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 4rem 0;
+}
+
+.semaforo-container img {
+    max-width: 300px;
+    height: auto;
+}
+
+.verde {
+    color: var(--verde);
+    font-weight: 600;
+}
+
+.amarelo {
+    color: var(--amarelo);
+    font-weight: 600;
+}
+
+.vermelho {
+    color: var(--vermelho);
+    font-weight: 600;
+}
+
+/* Estilos para telas menores (por exemplo, dispositivos móveis) */
+@media (max-width: 768px) {
+    .Texto-lancamento h2 {
+        margin: 2rem;
+        font-size: 2rem; /* Reduza o tamanho da fonte para telas menores */
+    }
+
+    .Subtitulo {
+        font-size: 2rem; /* Reduza o tamanho da fonte para telas menores */
+        margin: 2rem; /* Reduza a margem para telas menores */
+    }
+
+    .texto {
+        margin-top: 1rem;
+    }
+
+    .semaforo img {
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,86 @@
+
+.Inicio-Header {
+    background-image: url('../Imagens/FundoCompleto.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 85vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 2rem 1rem;
+}
+
+@media (max-width: 768px) {
+    .Inicio-Header {
+        min-height: 50vh; /* Reduz o espaço vazio no mobile */
+        background-attachment: scroll; /* Melhora performance em mobile */
+    }
+}
+
+.Inicio-Header::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.1); /* Overlay sutil */
+}
+
+.Centro {
+    text-align: center;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.15); /* Glassmorphism */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+    color: #fff;
+    max-width: 600px;
+}
+
+.Centro img {
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.3));
+    margin-bottom: 1.5rem;
+}
+
+.Centro span {
+    font-size: 2.2rem; /* Reduzido de 4rem */
+    color: var(--azul-principal);
+    font-weight: 800;
+}
+
+
+/* @media screen and (max-width: 768px) {
+    .Centro {
+        font-size: 2rem; 
+    }
+
+    .Centro span {
+        font-size: 3rem; 
+    }
+} */
+
+@media (max-width: 768px) {
+    .Centro {
+        padding: 3rem 1.5rem; /* Mais respiro vertical */
+        width: 95%;
+        border-radius: 2rem;
+    }
+
+    .Centro img {
+        width: 100%;
+        max-width: 320px; /* Aumentado para não limitar o tamanho */
+        margin-bottom: 1.5rem;
+    }
+
+    .Centro p {
+        font-size: 1.4rem; /* Slogan maior */
+    }
+
+    .Centro span {
+        font-size: 2.2rem; /* Destaque "comprar" maior */
+    }
+}

@@ -1,0 +1,40 @@
+/* Estilos para telas maiores (por exemplo, desktop) */
+.textoImagem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+  width: 100%;
+}
+
+.textoImagem img {
+  max-width: 40%;
+  height: auto;
+  border-radius: 0.8rem;
+  box-shadow: var(--sombra-card);
+}
+
+.texto p, .textoImagem p {
+  flex: 1;
+  font-size: 0.95rem;
+  text-align: justify;
+  line-height: 1.7;
+}
+
+
+/* Estilos para telas menores (por exemplo, dispositivos móveis) */
+@media (max-width: 768px) {
+  .textoImagem {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+  }
+
+  .textoImagem img {
+      max-width: 100%;
+  }
+
+  .textoImagem p, .texto p {
+      padding: 0;
+  }
+}

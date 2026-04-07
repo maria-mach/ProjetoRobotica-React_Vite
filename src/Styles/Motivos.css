@@ -1,0 +1,75 @@
+/* Estilos base */
+.Motivos {
+    background-color: var(--azul-secundario);
+}
+
+.Titulo-motivos {
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.Titulo-motivos p {
+   font-size: 1.5rem; /* Reduzido de 3rem */
+   font-weight: 600;
+   line-height: 1.4;
+}
+
+.quadrados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem 0; /* Removido padding lateral redundante */
+}
+
+.item1, .item2, .item3 {
+    flex: 1 1 300px;
+    max-width: 350px;
+    min-height: 250px;
+    background-color: var(--azul-principal); /* Voltando para a cor escura */
+    border-radius: 1.5rem;
+    box-shadow: var(--sombra-card);
+    padding: 2.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.item1:hover, .item2:hover, .item3:hover {
+    transform: translateY(-8px);
+}
+
+.item1 p, .item2 p, .item3 p {
+    font-size: 1.1rem;
+    color: white; /* Texto branco no fundo escuro */
+    margin-top: 1.5rem;
+    line-height: 1.4;
+}
+
+.quadrados img {
+    height: 100px; /* Aumentado de 80px */
+    width: auto;
+    filter: brightness(0) invert(1); /* Garante que ícones pretos fiquem brancos, ou vice-versa se necessário */
+}
+
+@media (max-width: 768px) {
+    .quadrados {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0; /* Alinhado com o container principal */
+    }
+    
+    .item1, .item2, .item3 {
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+        padding: 1.5rem 1rem; /* Reduzido para evitar espaço vazio excessivo */
+    }
+
+    .Titulo-motivos p {
+        font-size: 1.2rem;
+    }
+}
