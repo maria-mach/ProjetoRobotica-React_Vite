@@ -35,8 +35,6 @@ O projeto oferece um site com navegação entre páginas internas e componentes 
    - `npm install`
 2. Inicie o servidor de desenvolvimento:
    - `npm run dev`
-3. Acesse o site no navegador em:
-   - `http://localhost:5173`
 
 ## Observações
 
